@@ -11,11 +11,11 @@
         <servlet-name>TestServlet</servlet-name>
         <servlet-class>com.wl.TestServlet</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>TestServlet</servlet-name>
         <url-pattern>/aa</url-pattern>
     </servlet-mapping>
+
     <servlet>
         <servlet-name>TestServlet02</servlet-name>
         <servlet-class>com.wl.TestServlet02</servlet-class>
@@ -32,4 +32,122 @@
         <param-name>address</param-name>
         <param-value>zhejiang</param-value>
     </context-param>
+    <servlet>
+        <servlet-name>PrintServlet</servlet-name>
+        <servlet-class>com.wl.response.PrintServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PrintServlet</servlet-name>
+        <url-pattern>/PrintServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>ChineseServlet</display-name>
+        <servlet-name>ChineseServlet</servlet-name>
+        <servlet-class>com.wl.response.ChineseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChineseServlet</servlet-name>
+        <url-pattern>/ChineseServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>RefreshServlet</display-name>
+        <servlet-name>RefreshServlet</servlet-name>
+        <servlet-class>com.wl.response.RefreshServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RefreshServlet</servlet-name>
+        <url-pattern>/RefreshServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>LoginServlet</display-name>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.wl.response.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>RequestLineServlet</display-name>
+        <servlet-name>RequestLineServlet</servlet-name>
+        <servlet-class>com.wl.request.RequestLineServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequestLineServlet</servlet-name>
+        <url-pattern>/RequestLineServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>RequestHeadersServlet</display-name>
+        <servlet-name>RequestHeadersServlet</servlet-name>
+        <servlet-class>com.wl.request.RequestHeadersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequestHeadersServlet</servlet-name>
+        <url-pattern>/RequestHeadersServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>DownManagerServlet</display-name>
+        <servlet-name>DownManagerServlet</servlet-name>
+        <servlet-class>com.wl.request.DownManagerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DownManagerServlet</servlet-name>
+        <url-pattern>/DownManagerServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>RequestParamsServlet</display-name>
+        <servlet-name>RequestParamsServlet</servlet-name>
+        <servlet-class>com.wl.request.RequestParamsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequestParamsServlet</servlet-name>
+        <url-pattern>/RequestParamsServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>RequestForwardServlet</display-name>
+        <servlet-name>RequestForwardServlet</servlet-name>
+        <servlet-class>com.wl.request.RequestForwardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequestForwardServlet</servlet-name>
+        <url-pattern>/RequestForwardServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>ResultServlet</display-name>
+        <servlet-name>ResultServlet</servlet-name>
+        <servlet-class>com.wl.request.ResultServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResultServlet</servlet-name>
+        <url-pattern>/ResultServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>IncludingServlet</display-name>
+        <servlet-name>IncludingServlet</servlet-name>
+        <servlet-class>com.wl.request.IncludingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IncludingServlet</servlet-name>
+        <url-pattern>/IncludingServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>IncludedServlet</display-name>
+        <servlet-name>IncludedServlet</servlet-name>
+        <servlet-class>com.wl.request.IncludedServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IncludedServlet</servlet-name>
+        <url-pattern>/IncludedServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

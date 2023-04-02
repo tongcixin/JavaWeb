@@ -1,16 +1,17 @@
 package com.wl.request;
-import java.io.IOException;
+import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
-public class RequestForwardServlet extends HttpServlet {
-	public void doGet(HttpServletRequest request,
+public class IncludingServlet extends HttpServlet {
+	public void doGet(HttpServletRequest request, 
         HttpServletResponse response)throws ServletException, IOException {
 		response.setContentType("text/html;charset=utf-8");
-		// 将数据存储到request对象中
-			request.setAttribute("username", "张三");
-			RequestDispatcher dispatcher = request
-					.getRequestDispatcher("/ResultServlet");
-			dispatcher.forward(request, response);
+		PrintWriter out = response.getWriter();
+		RequestDispatcher rd = request
+					.getRequestDispatcher("/IncludedServlet?p1=abc");
+			out.println("before including" + "<br>");
+			rd.include(request, response);
+			out.println("after including" + "<br>");
 		}
 		public void doPost(HttpServletRequest request,
 	        HttpServletResponse response)throws ServletException, IOException {
