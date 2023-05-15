@@ -1,5 +1,5 @@
 package com.wl.ch10.jdbc.example;
-import cn.itcast.jdbc.example.dao.UsersDao;
+import com.wl.ch10.jdbc.example.dao.UsersDao;
 public class DeleteUserTest{
     public static void main(String[] args) {
         // 删除操作

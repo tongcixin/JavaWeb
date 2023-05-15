@@ -1,7 +1,7 @@
 package com.wl.ch10.jdbc.example;
 import java.util.Date;
-import cn.itcast.jdbc.example.dao.UsersDao;
-import cn.itcast.jdbc.example.domain.User;
+import com.wl.ch10.jdbc.example.dao.UsersDao;
+import com.wl.ch10.jdbc.example.domain.User;
 public class JdbcInsertTest{
     public static void main(String[] args) {
         // 向users表插入一个用户信息

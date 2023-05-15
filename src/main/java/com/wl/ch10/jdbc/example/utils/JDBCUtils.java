@@ -11,7 +11,7 @@ public class JDBCUtils {
         Class.forName("com.mysql.cj.jdbc.Driver");
         String url = "jdbc:mysql://localhost:3306/jdbc?serverTimezone=GMT%2B8";
         String username = "root";
-        String password = "root";
+        String password = "tongcixin";
         Connection conn = DriverManager.getConnection(url, username,
                 password);
         return conn;

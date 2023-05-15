@@ -4,8 +4,8 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import cn.itcast.jdbc.example.domain.User;
-import cn.itcast.jdbc.example.utils.JDBCUtils;
+import com.wl.ch10.jdbc.example.domain.User;
+import com.wl.ch10.jdbc.example.utils.JDBCUtils;
 public class UsersDao {
     // 添加用户的操作
     public boolean insert(User user) {

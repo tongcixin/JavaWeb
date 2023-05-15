@@ -1,8 +1,11 @@
 package com.wl.ch10.jdbc.example;
+
+import com.wl.ch10.jdbc.example.dao.UsersDao;
+import com.wl.ch10.jdbc.example.domain.User;
+
 import java.util.ArrayList;
-import cn.itcast.jdbc.example.dao.UsersDao;
-import cn.itcast.jdbc.example.domain.User;
-public class FindAllUsersTest{
+
+public class FindAllUsersTest {
     public static void main(String[] args) {
         //创建一个名称为usersDao的对象
         UsersDao usersDao = new UsersDao();
