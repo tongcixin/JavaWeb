@@ -7,7 +7,7 @@ public class JdbcInsertTest{
         // 向users表插入一个用户信息
         UsersDao ud = new UsersDao();
         User user=new User();
-        user.setId(5);
+//        user.setId(5);
         user.setUsername("hl");
         user.setPassword("123");
         user.setEmail("hl@sina.com");

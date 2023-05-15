@@ -12,7 +12,7 @@ public class Example03 {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/jdbc?serverTimezone=GMT%2B8";
             String username = "root";
-            String password = "root";
+            String password = "tongcixin";
             //1.获取Connection对象
             conn = DriverManager.getConnection(url, username, password);
             String sql = "select * from users";

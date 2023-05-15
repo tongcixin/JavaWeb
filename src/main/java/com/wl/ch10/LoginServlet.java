@@ -26,8 +26,8 @@ public class LoginServlet extends HttpServlet {
         String loginName = request.getParameter("username");
         String loginPassword = request.getParameter("password");
         //sql语句
-        String selectUsername = "select username from tb_user";
-        String selectPassword = "select password from tb_user where username = ?";
+        String selectUsername = "select name from users";
+        String selectPassword = "select password from users where name = ?";
         try {
             //获取与数据库的链接
             conn = new GetConnection().getConnection();

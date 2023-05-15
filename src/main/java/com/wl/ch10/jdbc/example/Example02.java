@@ -12,7 +12,7 @@ public class Example02 {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/jdbc?serverTimezone=GMT%2B8";
             String username = "root";
-            String password = "root";
+            String password = "tongcixin";
             // 创建应用程序与数据库连接的Connection对象
             conn = DriverManager.getConnection(url, username, password);
             // 执行的SQL语句
