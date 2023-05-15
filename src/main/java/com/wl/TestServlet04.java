@@ -1,8 +1,11 @@
 package com.wl;
 
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Enumeration;
@@ -16,10 +19,10 @@ public class TestServlet04 extends HttpServlet {
         ServletContext context = this.getServletContext();
         Enumeration<String> paramNames = context.getInitParameterNames();
         out.println("all the paramName and paramValue are following:<br />");
-        while (paramNames.hasMoreElements()){
+        while (paramNames.hasMoreElements()) {
             String name = paramNames.nextElement();
             String value = context.getInitParameter(name);
-            out.println(name+":"+value);
+            out.println(name + ":" + value);
             out.println("<br />");
         }
     }
