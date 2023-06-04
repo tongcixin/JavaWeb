@@ -72,6 +72,16 @@
     </servlet-mapping>
     <servlet>
         <description></description>
+        <display-name>ch10LoginServlet</display-name>
+        <servlet-name>ch10LoginServlet</servlet-name>
+        <servlet-class>com.wl.ch10.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ch10LoginServlet</servlet-name>
+        <url-pattern>/ch10/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
         <display-name>RequestLineServlet</display-name>
         <servlet-name>RequestLineServlet</servlet-name>
         <servlet-class>com.wl.request.RequestLineServlet</servlet-class>
